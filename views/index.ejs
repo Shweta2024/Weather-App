@@ -1,0 +1,19 @@
+<%-include("partials/header")-%>
+
+<h2><%=title%></h2>
+<p>Know the weather of your city with this website!</p>
+
+<br>
+
+<form action="/" method="post">
+    <label for="cityName">Enter City Name</label>
+    <input type="text" id="cityName" name="cityName">
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+<p><%=temperature%></p>
+<p><%=description%></p>
+<img src=<%=icon%> >
+
+<%-include("partials/footer")-%>
